@@ -543,7 +543,12 @@
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
+                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/amborukoushik@gmail.com" method="POST">
+                        <!-- FormSubmit integration: first submission will send a confirmation email to amborukoushik@gmail.com -->
+                        <!-- Recommended hidden fields for FormSubmit -->
+                        <input type="hidden" name="_subject" value="New message from portfolio website">
+                        <!-- Disable FormSubmit captcha (optional). Remove or set to 'true' to enable. -->
+                        <input type="hidden" name="_captcha" value="false">
                         <div class="form-group">
                             <label for="name" class="form-label">Name</label>
                             <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
